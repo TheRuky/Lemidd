@@ -1,21 +1,3 @@
-### Main folder structure
-```
-📂app
-  📂src
-    📂assets
-      📂fonts
-      📂images
-      📂scripts
-      📂styles
-    📄index.html
-📂config
-  📂webpack
-  📄config.json
-📄.gitignore
-📄package.json
-📄README.md
-📄yarn.lock
-```
 # Installation
 In the root folder (where `package.json` is), run
 ```
