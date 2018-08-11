@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lemidd</title>
+  <!-- STYLES START -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <!-- STYLES END -->
+</head>
+<body>
+  <div class="container mt-3">
+    <div class="row">
+      <h2>These posts are fetched using axios. - <code>src/assets/scripts/methods/getPost.js</code></h2>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="card post" data-method="getPost" data-post-id="1">
+          <div class="card-body">
+            <h5 class="card-title post__title">Fetching title...</h5>
+            <h6 class="card-subtitle mb-2 text-muted post__author">Fetching author...</h6>
+            <p class="card-text post__content">Fetching content...</p>
+            <a href="#" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card post" data-method="getPost" data-post-id="12">
+          <div class="card-body">
+            <h5 class="card-title post__title">Fetching title...</h5>
+            <h6 class="card-subtitle mb-2 text-muted post__author">Fetching author...</h6>
+            <p class="card-text post__content">Fetching content...</p>
+            <a href="#" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card post" data-method="getPost" data-post-id="27">
+          <div class="card-body">
+            <h5 class="card-title post__title">Fetching title...</h5>
+            <h6 class="card-subtitle mb-2 text-muted post__author">Fetching author...</h6>
+            <p class="card-text post__content">Fetching content...</p>
+            <a href="#" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <h3>There are total of <span data-method="getGreens" class="text-success">0</span> green words in the text below. Also, check the console log. - <code>src/assets/scripts/methods/getGreens.js</code> and <code>src/assets/scripts/methods/greenWord.js</code></h3>
+      <p>Lorem <span data-method="greenWord" class="text-success">ipsum</span> dolor sit amet consectetur adipisicing <span data-method="greenWord" class="text-success">elit</span>. Accusamus veniam vitae numquam, assumenda nihil nostrum exercitationem facilis quod <span data-method="greenWord" class="text-success">nulla</span> facere totam. Commodi laborum provident <span data-method="greenWord" class="text-success">ipsam</span> sequi impedit <span data-method="greenWord" class="text-success">tenetur</span>, dolores cumque.</p>
+    </div>
+    <div class="row mt-3">
+      <h3 data-method="thisIsWeird">Passing an unknown method (inspect to check), for example <code>thisIsWeird</code>, will <b>not</b> break the JavaScript flow, but will log an error. Check the console log.</h3>
+    </div>
+    <div class="row mt-3">
+      <h3>If Lemidd receives a method which is defined, but not used in the DOM, it will be skipped and never run.</h3>
+    </div>
+  </div>
+  <!-- SCRIPTS START -->
+  <script src="/assets/scripts/main.js"></script>
+  <!-- SCRIPTS END -->
+</body>
+</html>

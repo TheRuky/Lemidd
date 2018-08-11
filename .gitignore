@@ -1,0 +1,38 @@
+/.env
+/.idea
+/vendor
+
+# Craft runtime and backups folders
+# /craft/storage/*
+# !/craft/storage/logo/*
+
+# Docker
+docker-compose.yml
+docker-compose.yaml
+.docker-data
+
+# Uploaded files
+# public/assets/uploads/*
+
+# Misc files
+.idea/
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-workspace
+*.sublime-project
+*.komodoproject
+.komodotools
+_notes
+dwsync.xml
+logs/*
+*.log
+*.cache-loader
+app/dist/
+node_modules
+app/public/assets

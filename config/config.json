@@ -1,0 +1,42 @@
+{
+  "craft": false,
+  "craftPath": "../",
+  "context": "app/src/assets",
+  "entry": {
+    "main": [
+      "babel-polyfill",
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ]
+  },
+  "url": {
+    "dev": "http://3a.local",
+    "proxy": "http://localhost:3000"
+  },
+  "output": {
+    "path": "web/assets",
+    "publicPath": "/assets/"
+  },
+  "watch": [
+    "config/*.php",
+    "templates/**/*"
+  ],
+  "staticServer": {
+    "output": {
+      "path": "app/public/assets",
+      "publicPath": "/assets/"
+    },
+    "host": "localhost",
+    "port": 3000,
+    "baseDir": [
+      "app/public"
+    ],
+    "watch": [
+      "app/public/*.html"
+    ]
+  },
+  "modules": {
+  },
+  "hmr": true,
+  "lint": true
+}
